@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# Users Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Objective
 
-Currently, two official plugins are available:
+### This project aims to evaluate skills in creating a React application with Redux Toolkit and TypeScript. The assignment involves building a user management table that displays user information fetched from a mock API and implementing advanced filtering functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  🔍Requirements
 
-## Expanding the ESLint configuration
+1. **Fetch All Users:**
+   - Use the endpoint `GET /users` from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) to retrieve the list of all users.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. **Display Users in a Table:**
+   - Implement a table with columns: name, username, email, and phone.
 
-- Configure the top-level `parserOptions` property like this:
+3. **Implement Advanced Filtering:**
+   - Add search input fields for each column (name, username, email, phone).
+   - Ensure that the table dynamically filters results based on user input in these fields, with real-time updates.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+4. **State Management:**
+   - Use Redux to manage the application state, including user data and filter states. You can choose between Classic Redux or Redux Toolkit.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+5. **Type Safety:**
+   - Apply TypeScript comprehensively across the entire web application to ensure proper typing and reduce potential runtime errors.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+6. **Design and Styling:**
+   - Design the table and search inputs to be user-friendly and visually appealing. The styling is up to you, aiming for a clean and effective user interface.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🔧Stack technology
+
+<p align="left"><img width="40" src="https://vitejs.dev/logo.svg" alt="Vite logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Skills" width="40" height="40"/>  
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Skills" width="40" height="40"/> 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Skills" align="left" width="40" height="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Skills" width="40" height="40"/>  
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Skills" width="40" height="40"/>  
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Skills" width="40" height="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg" alt="Skills" align="left" width="40" height="40"/><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Skills" width="40" height="40"/></p>
+
