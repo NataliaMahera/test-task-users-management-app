@@ -1,4 +1,5 @@
 # Users Management App
+### React + Vite + TypeScript
 
 ## 📝 Objective
 
